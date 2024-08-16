@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Lana';
+    src: url('../public/fonts/lena.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Bold';
+    src: url('../public/fonts/FuturaLT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura Book';
+    src: url('../public/fonts/futurabkbtrusbyme_book.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Применение шрифтов по умолчанию */
+body {
+    box-sizing: border-box;
+    font-family: 'Lana', sans-serif;
+}
+
