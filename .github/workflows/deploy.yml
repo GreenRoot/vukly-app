@@ -1,4 +1,4 @@
-name: Deploy Vukly Client App to Yandex Cloud
+name: Deploy React App to Yandex Cloud
 
 on:
   push:
@@ -24,6 +24,9 @@ jobs:
       - name: Build React App
         run: npm run build
 
+      - name: Verify Build Directory
+        run: ls -la dist/
+
       - name: Upload to Yandex Cloud Storage
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.YANDEX_ACCESS_KEY_ID }}
@@ -32,4 +35,4 @@ jobs:
           aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
           aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
           aws configure set region ${{ secrets.YANDEX_REGION }}
-          aws s3 sync build/ s3://${{ secrets.YANDEX_BUCKET_NAME }} --delete
+          aws s3 sync dist/ s3://${{ secrets.YANDEX_BUCKET_NAME }} --delete
