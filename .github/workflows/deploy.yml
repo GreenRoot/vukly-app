@@ -27,12 +27,18 @@ jobs:
       - name: Verify Build Directory
         run: ls -la dist/
 
-      - name: Upload to Yandex Cloud Storage
+      - name: Configure AWS CLI for Yandex Cloud
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.YANDEX_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.YANDEX_SECRET_ACCESS_KEY }}
         run: |
           aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
           aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
+          aws configure set region us-east-1  # Укажи произвольный регион
+          aws configure set output json
           aws configure set default.s3.endpoint_url https://storage.yandexcloud.net
+          aws sts get-caller-identity  # Проверка правильности конфигурации
+
+      - name: Upload to Yandex Cloud Storage
+        run: |
           aws s3 sync dist/ s3://${{ secrets.YANDEX_BUCKET_NAME }} --endpoint-url=https://storage.yandexcloud.net --delete
