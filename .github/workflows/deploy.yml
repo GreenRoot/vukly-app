@@ -3,7 +3,7 @@ name: Deploy Vukly Client App to Yandex Cloud
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build-and-deploy:
