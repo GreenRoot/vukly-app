@@ -1,0 +1,72 @@
+.body {
+  display: grid;
+  grid-template-rows: 48px 1fr;
+  height: calc(100dvh - 32px);
+  width: calc(100% - 32px);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #3069F2;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 8px;
+  grid-template-areas:
+          'profile energy coins'
+          'content content content'
+          'content content content'
+          'trainings trainings goals'
+          'trainings trainings rating'
+          'journal meals meals';
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  border-radius: 32px;
+  padding: 8px;
+}
+.cardGreen {
+  background-color: #CBF52D;
+}
+.cardBlue {
+  background-color: #3069F2;
+  color: white;
+}
+.profile {
+  grid-area: profile;
+  background-size: 70px;
+  background-position: -10px -10px;
+  background-repeat: no-repeat;
+}
+.energy {
+  grid-area: energy;
+}
+.coins {
+  grid-area: coins;
+}
+.content {
+  grid-area: content;
+}
+.trainings {
+  grid-area: trainings;
+}
+.goals {
+  grid-area: goals;
+}
+.rating {
+  grid-area: rating;
+}
+.journal {
+  grid-area: journal;
+}
+.meals {
+  grid-area: meals;
+}
