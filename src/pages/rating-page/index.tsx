@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import styles from "@/shared/soon-pages-styles/index.module.scss";
-import rating from "@/shared/img/rating_vukly.png";
+import rating from "@/shared/img/rating_vukly.webp";
 
 export const RatingPage = () => {
   return (

@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import styles from "@/shared/soon-pages-styles/index.module.scss";
-import energy from "@/shared/img/energy_vukly.png";
+import energy from "@/shared/img/energy_vukly.webp";
 
 export const EnergyPage = () => {
   return (

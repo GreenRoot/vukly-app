@@ -1,12 +1,21 @@
 {
   "compilerOptions": {
-    "jsx": "react-jsx",
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "skipLibCheck": true,
-    "baseUrl": "./",
+    "target": "esnext",                     // Обозначает версию ECMAScript, которую нужно использовать
+    "module": "esnext",                     // Определяет тип модуля, который будет использоваться
+    "jsx": "react-jsx",                     // Позволяет использовать современный JSX с React 17+
+    "esModuleInterop": true,                // Обеспечивает совместимость с CommonJS модулями
+    "moduleResolution": "node",             // Использует алгоритм Node.js для поиска модулей
+    "skipLibCheck": true,                   // Пропускает проверку типов в библиотеках
+    "strict": true,                         // Включает строгий режим TypeScript
+    "forceConsistentCasingInFileNames": true, // Обеспечивает строгую регистрозависимость имён файлов
+    "isolatedModules": true,                // Требует, чтобы каждый файл был независимым модулем
+    "resolveJsonModule": true,              // Позволяет импортировать JSON файлы как модули
+    "noEmit": true,                         // Предотвращает создание файлов .js при компиляции
+    "baseUrl": "./",                        // Устанавливает базовый путь для разрешения путей
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"]                      // Позволяет использовать абсолютные пути начиная с @
     }
-  }
+  },
+  "include": ["src"],                       // Включает все файлы в каталоге src
+  "exclude": ["node_modules", "dist"]       // Исключает node_modules и dist из компиляции
 }

@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import styles from "@/shared/soon-pages-styles/index.module.scss";
-import coins from '@/shared/img/coins_vukly.png'
+import coins from '@/shared/img/coins_vukly.webp'
 
 export const CoinsPage = () => {
   return (

@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import styles from "@/shared/soon-pages-styles/index.module.scss";
-import goals from "@/shared/img/goals_vukly.png";
+import goals from "@/shared/img/goals_vukly.webp";
 
 export const GoalsPage = () => {
   return (

@@ -25,10 +25,12 @@
 * {
     text-decoration: none;
 }
+
 /* Применение шрифтов по умолчанию */
 body {
     box-sizing: border-box;
     font-family: 'Lana', sans-serif;
+    background-color: white;
     margin: 0;
 }
 

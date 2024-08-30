@@ -35,6 +35,7 @@
 }
 .cardGreen {
   background-color: #CBF52D;
+  color: black;
 }
 .cardBlue {
   background-color: #3069F2;
@@ -42,31 +43,73 @@
 }
 .profile {
   grid-area: profile;
-  background-size: 70px;
+  background-size: 80%;
   background-position: -10px -10px;
   background-repeat: no-repeat;
 }
 .energy {
   grid-area: energy;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: 70%;
+  background-position: -5px -5px;
+  background-repeat: no-repeat;
+}
+.energy_count {
+  font-family: 'Futura Bold', sans-serif;
 }
 .coins {
   grid-area: coins;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-size: 80%;
+  background-position: calc(100% + 20px) -20px;
+  background-repeat: no-repeat;
+}
+.coins_count {
+  font-family: 'Futura Bold', sans-serif;
 }
 .content {
   grid-area: content;
+  color: black;
 }
 .trainings {
   grid-area: trainings;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: -10px;
 }
 .goals {
   grid-area: goals;
+  position: relative;
+}
+.goals_img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: calc(100% + 11px) -3px;
 }
 .rating {
   grid-area: rating;
+  background-size: 60%;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .journal {
   grid-area: journal;
+  background-size: 60%;
+  background-position: top center;
+  background-repeat: no-repeat;
 }
 .meals {
   grid-area: meals;
+  background-size: 60%;
+  background-position: calc(100% + 30px) -20px;
+  background-repeat: no-repeat;
 }

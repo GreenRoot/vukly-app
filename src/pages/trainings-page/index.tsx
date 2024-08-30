@@ -1,6 +1,6 @@
 import {Link} from "react-router-dom";
 import styles from "@/shared/soon-pages-styles/index.module.scss";
-import training from "@/shared/img/training_vukly.png";
+import training from "@/shared/img/training_vukly.webp";
 
 export const TrainingsPage = () => {
   return (
