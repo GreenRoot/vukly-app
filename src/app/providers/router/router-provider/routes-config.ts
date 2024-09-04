@@ -8,6 +8,7 @@ import {RatingPage} from "@/pages/rating-page";
 import {JournalPage} from "@/pages/journal-page";
 import {MealsPage} from "@/pages/meals-page";
 import {TrainingPage} from "@/pages/training-page";
+import {CoolPage} from "@/pages/cool-page";
 
 export const routesConfig = [
   { path: '/', component: HomePage },
@@ -20,4 +21,5 @@ export const routesConfig = [
   { path: '/journal', component: JournalPage },
   { path: '/meals', component: MealsPage },
   { path: '/trainings/:id', component: TrainingPage },
+  { path: '/cool', component: CoolPage },
 ];

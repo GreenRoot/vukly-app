@@ -161,7 +161,7 @@ export const TrainingPage = () => {
               </li>
             ))}
           </ul>
-          <Link to="/" className={styles.finishButton}>FINISH</Link>
+          <Link to="/cool" className={styles.finishButton}>FINISH</Link>
         </div>
       </div>
     );
