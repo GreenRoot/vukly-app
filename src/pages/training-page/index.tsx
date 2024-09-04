@@ -6,6 +6,7 @@ const workouts = [
         id: 1,
         name: "Push-ups",
         target: "Target: Chest, shoulders, triceps.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 15, rest: 30 },
             { reps: 15, rest: 30 },
@@ -16,6 +17,7 @@ const workouts = [
         id: 2,
         name: "Plank with shoulder touch",
         target: "Target: Core, shoulders, back.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 30, rest: 30 },
             { reps: 30, rest: 30 },
@@ -26,6 +28,7 @@ const workouts = [
         id: 3,
         name: "Classic crunches",
         target: "Target: Abs.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 15, rest: 30 },
             { reps: 15, rest: 30 },
@@ -36,6 +39,7 @@ const workouts = [
         id: 4,
         name: "Straight arm plank",
         target: "Target: Core, shoulders, back.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 30, rest: 30 },
             { reps: 30, rest: 30 },
@@ -46,6 +50,7 @@ const workouts = [
         id: 5,
         name: "Lying leg raises",
         target: "Target: Abs.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 15, rest: 30 },
             { reps: 15, rest: 30 },
@@ -56,6 +61,7 @@ const workouts = [
         id: 6,
         name: "Bicycle crunches",
         target: "Target: Abs.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 15, rest: 30 },
             { reps: 15, rest: 30 },
@@ -66,6 +72,7 @@ const workouts = [
         id: 7,
         name: "Jumping up",
         target: "Target: Legs, glutes, core.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 15, rest: 30 },
             { reps: 15, rest: 30 },
@@ -76,6 +83,7 @@ const workouts = [
         id: 8,
         name: "Squats",
         target: "Target: Legs, glutes, core.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 15, rest: 30 },
             { reps: 15, rest: 30 },
@@ -85,6 +93,7 @@ const workouts = [
         id: 9,
         name: "Forward and backward lunges",
         target: "Target: Legs, glutes, core.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 15, rest: 30 },
             { reps: 15, rest: 30 },
@@ -95,6 +104,7 @@ const workouts = [
         id: 10,
         name: "Glute bridge",
         target: "Target: Glutes, core.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 15, rest: 30 },
             { reps: 15, rest: 30 },
@@ -105,6 +115,7 @@ const workouts = [
         id: 11,
         name: "Stepping onto a chair",
         target: "Target: Legs, glutes, core.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 15, rest: 30 },
             { reps: 15, rest: 30 },
@@ -115,6 +126,7 @@ const workouts = [
         id: 12,
         name: "Deadlift on one leg",
         target: "Target: Legs, glutes, core.",
+        img: '../public/img/training-01.webp',
         sets: [
             { reps: 15, rest: 30 },
             { reps: 15, rest: 30 },
@@ -137,6 +149,7 @@ export const TrainingPage = () => {
         <h1 className={styles.title}>{workout.name}</h1>
         <div className={styles.exercise}>
           <p className={styles.exerciseTarget}>{workout.target}</p>
+          <img src={workout.img} alt={workout.name} className={styles.exerciseImage} />
           <ul className={styles.setsList}>
             {workout.sets.map((set, setIndex) => (
               <li key={setIndex} className={styles.set}>
