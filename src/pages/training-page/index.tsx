@@ -148,17 +148,21 @@ export const TrainingPage = () => {
       <div className={styles.container}>
         <h1 className={styles.title}>{workout.name}</h1>
         <div className={styles.exercise}>
-          <p className={styles.exerciseTarget}>{workout.target}</p>
           <img src={`/img/${workout.img}`} alt={workout.name} className={styles.exerciseImage} />
+          <p className={styles.exerciseTarget}>{workout.target}</p>
           <ul className={styles.setsList}>
             {workout.sets.map((set, setIndex) => (
               <li key={setIndex} className={styles.set}>
-                Set {setIndex + 1}: {set.reps} Resp / {set.rest} sec
+                <div className={styles.setNumber}>
+                  <div className={styles.setNumberText}>{setIndex + 1} set</div>
+                  <div className={styles.setNumberText}>{set.reps} reps</div>
+                </div>
+                <div className={styles.setRest}>rest {set.rest} sec</div>
               </li>
             ))}
           </ul>
+          <Link to="/" className={styles.finishButton}>FINISH</Link>
         </div>
-        <Link to="/" className={styles.finishButton}>FINISH</Link>
       </div>
     );
   };

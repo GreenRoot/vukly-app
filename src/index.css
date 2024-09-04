@@ -1,7 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
     font-family: 'Lana';
     src: url('shared/fonts/lena.ttf') format('truetype');
