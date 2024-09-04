@@ -1,0 +1,55 @@
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.trainingIcon {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: -100px 0;
+  user-select: none;
+  pointer-events: none;
+}
+
+.trainingList {
+  list-style-type: none;
+  padding: 0;
+}
+
+.trainingItem {
+  margin-bottom: 13px;
+}
+
+.trainingLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  padding: 0 20px;
+  background-color: #3069F2;
+  border-radius: 32px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.backLink {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #3069F2;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

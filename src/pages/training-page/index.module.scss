@@ -1,0 +1,44 @@
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.exercise {
+  margin-bottom: 20px;
+}
+
+.exerciseTitle {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.setsList {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.set {
+  margin-bottom: 5px;
+}
+
+.finishButton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3069F2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+
+  &:hover {
+    background-color: #2050D0;
+  }
+}
