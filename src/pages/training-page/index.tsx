@@ -9,8 +9,8 @@ const workouts = [
         img: 'training-01.webp',
         sets: [
             { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
+            { reps: 13, rest: 45 },
+            { reps: 10, rest: 60 },
         ]
     },
     {
@@ -19,9 +19,9 @@ const workouts = [
         target: "Target: Core, shoulders, back.",
         img: 'training-01.webp',
         sets: [
-            { reps: 30, rest: 30 },
-            { reps: 30, rest: 30 },
-            { reps: 30, rest: 30 },
+            { reps: 20, rest: 40 },
+            { reps: 24, rest: 50 },
+            { reps: 26, rest: 50 },
         ]
     },
     {
@@ -30,9 +30,9 @@ const workouts = [
         target: "Target: Abs.",
         img: 'training-01.webp',
         sets: [
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
+            { reps: 18, rest: 40 },
+            { reps: 20, rest: 50 },
+            { reps: 24, rest: 50 },
         ]
     },
     {
@@ -41,9 +41,9 @@ const workouts = [
         target: "Target: Core, shoulders, back.",
         img: 'training-01.webp',
         sets: [
-            { reps: 30, rest: 30 },
-            { reps: 30, rest: 30 },
-            { reps: 30, rest: 30 },
+            { reps: 30, rest: 20 },
+            { reps: 35, rest: 30 },
+            { reps: 40, rest: 30 },
         ]
     },
     {
@@ -52,9 +52,9 @@ const workouts = [
         target: "Target: Abs.",
         img: 'training-01.webp',
         sets: [
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
+            { reps: 16, rest: 40 },
+            { reps: 18, rest: 50 },
+            { reps: 20, rest: 50 },
         ]
     },
     {
@@ -63,9 +63,9 @@ const workouts = [
         target: "Target: Abs.",
         img: 'training-01.webp',
         sets: [
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
+            { reps: 20, rest: 40 },
+            { reps: 24, rest: 50 },
+            { reps: 28, rest: 50 },
         ]
     },
     {
@@ -74,9 +74,9 @@ const workouts = [
         target: "Target: Legs, glutes, core.",
         img: 'training-01.webp',
         sets: [
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
+            { reps: 18, rest: 60 },
+            { reps: 20, rest: 60 },
+            { reps: 22, rest: 60 },
         ]
     },
     {
@@ -85,9 +85,9 @@ const workouts = [
         target: "Target: Legs, glutes, core.",
         img: 'training-01.webp',
         sets: [
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },]
+            { reps: 40, rest: 60 },
+            { reps: 50, rest: 60 },
+            { reps: 60, rest: 60 },]
     },
     {
         id: 9,
@@ -95,9 +95,9 @@ const workouts = [
         target: "Target: Legs, glutes, core.",
         img: 'training-01.webp',
         sets: [
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
+            { reps: 20, rest: 60 },
+            { reps: 24, rest: 60 },
+            { reps: 30, rest: 60 },
         ]
     },
     {
@@ -106,9 +106,9 @@ const workouts = [
         target: "Target: Glutes, core.",
         img: 'training-01.webp',
         sets: [
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
+            { reps: 30, rest: 60 },
+            { reps: 34, rest: 60 },
+            { reps: 36, rest: 60 },
         ]
     },
     {
@@ -117,9 +117,9 @@ const workouts = [
         target: "Target: Legs, glutes, core.",
         img: 'training-01.webp',
         sets: [
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
+            { reps: 20, rest: 40 },
+            { reps: 22, rest: 50 },
+            { reps: 24, rest: 50 },
         ]
     },
     {
@@ -128,9 +128,9 @@ const workouts = [
         target: "Target: Legs, glutes, core.",
         img: 'training-01.webp',
         sets: [
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
-            { reps: 15, rest: 30 },
+            { reps: 16, rest: 40 },
+            { reps: 18, rest: 50 },
+            { reps: 20, rest: 60 },
         ]
     },
 ]
